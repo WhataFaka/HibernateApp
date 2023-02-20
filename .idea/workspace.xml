@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9c1c11c-9863-407b-88cd-5c8743945949" name="Changes" comment="One to many">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Passport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" afterDir="false" />
+    <list default="true" id="e9c1c11c-9863-407b-88cd-5c8743945949" name="Changes" comment="One to one">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Director.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Movie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Passport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +98,7 @@
       <workItem from="1676561351454" duration="1905000" />
       <workItem from="1676601574705" duration="1152000" />
       <workItem from="1676655612115" duration="1839000" />
+      <workItem from="1676811348255" duration="4612000" />
     </task>
     <task id="LOCAL-00001" summary="One to many">
       <created>1676561650843</created>
@@ -106,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676561650843</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="One to one">
+      <created>1676811611670</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676811611670</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="One to many" />
-    <option name="LAST_COMMIT_MESSAGE" value="One to many" />
+    <MESSAGE value="One to one" />
+    <option name="LAST_COMMIT_MESSAGE" value="One to one" />
   </component>
 </project>

@@ -1,35 +1,38 @@
 package org.example;
 
-import org.example.model.Passport;
-import org.example.model.Person;
+import org.example.model.Actor;
+import org.example.model.Movie;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Hello world!
  */
 public class App {
     public static void main(String[] args) {
-        Configuration configuration = new Configuration().addAnnotatedClass(Person.class).addAnnotatedClass(Passport.class);
+        Configuration configuration = new Configuration().addAnnotatedClass(Actor.class).addAnnotatedClass(Movie.class);
 
         SessionFactory sessionFactory = configuration.buildSessionFactory();
-        Session session = sessionFactory.getCurrentSession();
 
-        try {
+        try (sessionFactory) {
+            Session session = sessionFactory.getCurrentSession();
             session.beginTransaction();
 
-            Person person = new Person("Ivan", 34);
-            Passport passport = new Passport(34251367);
+            Actor actor = session.get(Actor.class, 2);
+            System.out.println(actor.getMovies());
 
-            person.setPassport(passport);
+            Movie movieToRemove = actor.getMovies().get(0);
 
-            session.save(person);
-
+            actor.getMovies().remove(0);
+            movieToRemove.getActors().remove(actor);
 
             session.getTransaction().commit();
-        } finally {
-            sessionFactory.close();
         }
     }
 }
